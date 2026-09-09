@@ -8,7 +8,7 @@ HTML 演示 → 浏览器编辑与保存 → 导出原生可编辑 PPTX / 静态
 
 [English](README.en.md) · [功能与边界](#功能与边界) · [安装](#安装) · [快速开始](#快速开始) · [环境与导出](#环境与导出) · [更新记录](CHANGELOG.md)
 
-> 当前版本 **v1.0.0 · 2026-09-09**。公开版保留确认版编辑器、品牌配色、12类版式和获准公开的品牌场景图。仅移除私有项目路径、真实专利与检测证据；证据页使用明确标注的占位材料。它不是 Dashi 官方主题、官方分支或通用 PPTX 导入器。
+> 当前版本 **v1.1.0 · 2026-09-09**。新增完整内置 Taste + Impeccable 审查技能。公开版保留确认版编辑器、品牌配色、12类版式和获准公开的品牌场景图。仅移除私有项目路径、真实专利与检测证据；证据页使用明确标注的占位材料。它不是 Dashi 官方主题、官方分支或通用 PPTX 导入器。
 
 ## 你会得到什么
 
@@ -19,6 +19,7 @@ HTML 演示 → 浏览器编辑与保存 → 导出原生可编辑 PPTX / 静态
 - 自由变换浮层：九点参考位置、尺寸百分比、等比缩放、旋转、翻转、画布缩放控制点。
 - 圆角矩形滑块 + 数值半径调节；保存、撤销/重做和导出共用同一场景数据。
 - 原文保留与溢出检查。字多时调整版式或在获得允许后分页，不擅自删减文字。
+- 两套随包审查技能：Taste 检查画面与节奏，Impeccable 检查排版和可读性；逐页记录实际画面依据，通过后才交付终稿。
 
 ![十二类版式](skills/benchun-dashi-ppt/assets/reference-contact.jpg)
 
@@ -38,6 +39,19 @@ git clone https://github.com/Midnight98-lin/benchun-dashi-ppt.git
 - 安装后在新任务中选择 `$benchun-dashi-ppt`，或明确写出技能名称。
 
 本仓库没有发布 npm 包，**不要使用 `npx benchun-dashi-ppt`**。
+
+`review-skills/` 已包含两个审查技能的完整安装文件及许可证，随本纯技能一起复制即可，不需要另行安装，也不要漏拷其 reference、scripts、agents 子目录。其他 AI 可直接读取内部 SKILL.md，不依赖 Codex 专有的子技能调用命令。
+
+## 必经制作与终审流程
+
+按需求设计制作 → 保存同一修订并内部渲染候选 → Taste 逐页画面审查 → Impeccable 逐页精修审查 → 集中修复、确认 → 通过后交付。
+
+- 两套技能都必须实际使用；没有子代理时可由同一 AI 分两次检查并如实记录。
+- 不以网页的标点、字数或配色禁令改写 PPT 原文/数据；本纯品牌、真实包装与锁字规则优先。
+- 每个交付格式单独核验。没看过实际页面、没查完或还有缺陷时，不得声称终审通过。
+- 逐页审查依据放在任务目录 `dual-review.md`。这是 AI 工作协议，技术脚本不能代替审美判断，也不构成能够强制所有 AI 遵守的系统锁。
+
+详见 [PPT 双技能适配与放行规则](skills/benchun-dashi-ppt/references/dual-review.md) 和 [原技能来源及许可证](skills/benchun-dashi-ppt/review-skills/SOURCES.md)。
 
 ## 快速开始
 
@@ -113,6 +127,7 @@ skills/benchun-dashi-ppt/
   agents/        技能显示名称与调用提示
   assets/        品牌场景、样例、色彩与编辑器
   references/    视觉规则、运行说明、验收与素材边界
+  review-skills/ Taste + Impeccable 完整审查技能与许可证
   scripts/       模板生成、服务、导出、原文核对及测试
 docs/            编辑器预览与发布说明
 ```
@@ -128,6 +143,6 @@ node skills/benchun-dashi-ppt/scripts/test-editor-api.mjs
 
 ## 使用与权利说明
 
-本项目借鉴 Dashi 的声明式编排方式，是独立品牌实现，不是官方扩展，不包含其专有源码或私有导出API。第三方图标声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+本项目借鉴 Dashi 的声明式编排方式，是独立品牌实现，不是官方扩展，不包含其专有源码或私有导出API。第三方图标和审查技能声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。随附第三方技能继续适用各自 MIT / Apache-2.0 许可证，不受下面的本纯自有部分说明限制。
 
 仓库当前**未指定通用代码开源许可证**。公开可下载不等于授予无限制再分发、商标使用或素材转售权；本纯名称、Logo与品牌图片仍受各自权利约束。请勿将品牌示例作为其他品牌的包装或产品背书。后续如需明确开源协议，应由权利人选择，不自动套用参考仓库的许可证。

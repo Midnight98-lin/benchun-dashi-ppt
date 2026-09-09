@@ -5,14 +5,14 @@ description: 为本纯魔法、植润色制作或美化品牌演示、产品手�
 
 # Benchun Dashi PPT
 
-当前确认版本：2026-09-09（Apple 风格编辑器与圆角调节）。后续生成与启动编辑器应使用本技能随附的运行文件，不回退到旧任务目录的编辑器副本。
+当前确认版本：2026-09-09（v1.1.0：内置双技能终审；保留 Apple 风格编辑器与圆角调节）。后续生成与启动编辑器应使用本技能随附的运行文件，不回退到旧任务目录的编辑器副本。
 
 本技能统一**视觉语言与制作方法，不统一业务内容或章节结构**。采用“HTML 演示 → 浏览器编辑与保存 → 导出 PPTX / PDF”的工作流；这是独立实现的品牌技能，不改动或复制原 `dashi-ppt` 的专有编辑器、API 与导出引擎。
 
 ## 先读什么
 
 1. 有当前项目 `AGENTS.md` 时先读取，并按其要求检查项目知识与同步状态；没有本纯私有仓库时，使用本技能随附视觉规则和本次用户提供的资料，不猜测私有路径。不得因调用技能擅自归档或清理。
-2. 阅读 `references/brand-system.md` 和 `references/production-gates.md`。涉及产品或证据图，再读 `references/asset-workflow.md`。
+2. 阅读 `references/brand-system.md`、`references/production-gates.md` 和 `references/dual-review.md`。按双技能协议完整读取随包 Taste、Impeccable 入口及其适用参考，无须另行安装。涉及产品或证据图，再读 `references/asset-workflow.md`。
 3. 看 `assets/reference-contact.jpg`，理解样张的主次、留白和构图，不照搬文案。公开版保留获准公开的品牌场景；证据页图片是显著标记的演示占位，必须替换为真实授权证据后才可用于实际文件。
 4. 新任务使用当次提供的内容。只美化时，先提取原文：`python scripts/text_lock.py extract 原稿.pptx 工作目录/text-lock.json`。表格、脚注、单位、原本的大白话标题与专业解释一起锁定。图片中的文字另外核对。
 
@@ -30,9 +30,11 @@ description: 为本纯魔法、植润色制作或美化品牌演示、产品手�
 
 说明用途、受众、屏幕/阅读距离、源文件、是否允许分页、目标视觉、需要的包装规格。按项目设计角色：主智能体审定简报 → word_agent 提交逐页原文映射并锁字 → pic_agent 根据锁字和正式资产制作 → word_agent 核对文字 → 主智能体终审。不要启动无关部门。
 
+没有可用或获准的子代理时，主 AI 依次完成以上角色工作并记录单 AI 执行；不得虚构代理参与，也不能因此省略锁字或双技能终审。
+
 ### 2. Taste → Impeccable → ImageGen
 
-阅读并使用 `design-taste-frontend` 判断画面节奏和取舍；再用 `impeccable` 整理字阶、间距和对齐。对静态 PPT 只采用适用的设计原则，不把网页导航、按钮或卡片系统机械搬进课件。涉及位图生成时阅读并使用 `imagegen`（用户指定 im2 时使用当前可用对应生图工具，不声称已调用未实际调用的模型）。已有素材足够则不为凑流程生图。
+使用随包 `review-skills/design-taste-frontend/SKILL.md` 判断画面节奏和取舍，再用 `review-skills/impeccable/SKILL.md` 整理字阶、间距和对齐。必须按 `references/dual-review.md` 做 PPT 适配，不能因网页字数、标点、配色或技术栈规则改写原文、替换品牌或重构运行链路。涉及位图生成时阅读并使用当前环境的 `imagegen`（用户指定 im2 时使用当前可用对应生图工具，不声称已调用未实际调用的模型）。已有素材足够则不为凑流程生图；缺生图工具则说明，不能用假包装补位。
 
 ### 3. layout + props 编排
 
@@ -66,6 +68,8 @@ node scripts/serve.mjs 工作目录/presentation --port 5368
 - 数据来源、数值、单位、样本条件不变。量化信息使用原生可编辑图表/大数字/对比；不要用 3D 饼图制造视觉误差。专利与检测只用真实证据图片。
 
 ### 5. 导出与双技能终审
+
+强制执行：按要求制作 → 保存并内部渲染/导出候选 → Taste 逐页画面审查 → Impeccable 逐页精修审查 → 集中修复与确认 → 通过后输出。具体范围、截图依据、限次修复、单 AI 降级与放行标准以 `references/dual-review.md` 为准。任务目录必须保留逐页双技能记录；未执行、未看图或未修复不许写“通过”。此为 AI 流程门槛，不将技术脚本误称完整视觉审查。
 
 先浏览 HTML 全页检查；导出必须读取同一已保存 scene 的修订快照，不能重新排版旧 goal 或重新载入旧工作簿抹掉浏览器修改。本地编辑器提供 HTML 下载、演示与 PPTX / PDF 导出；离线 HTML 支持编辑、下载和打印 PDF，PPTX 导出需启动本地服务。
 

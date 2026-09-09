@@ -4,7 +4,7 @@
 
 ## 环境与边界
 
-Node 20+；HTML 初次生成与本地服务使用 Node 内置模块。HTML 嵌入素材 data URL，可离线打开。Python 正文核对仅用标准库。PPTX 导出需要 `@oai/artifact-tool` 与 `presentations` 技能的终检工具；先调用 `load_workspace_dependencies` 定位运行时，必要时设置 `BENCHUN_NODE_MODULES`、`PRESENTATIONS_SKILL_DIR`、`RUNTIME_PYTHON`。缺少依赖时说明缺项，不切换为整页截图 PPT。
+Node 20+；HTML 初次生成与本地服务使用 Node 内置模块。HTML 嵌入素材 data URL，可离线打开。Python 正文核对仅用标准库。PPTX 导出需要 `@oai/artifact-tool` 与 `presentations` 技能的终检工具；若平台提供 `load_workspace_dependencies` 则用其定位运行时，否则检查本机已有依赖和用户配置，不调用不存在的工具。必要时设置 `BENCHUN_NODE_MODULES`、`PRESENTATIONS_SKILL_DIR`、`RUNTIME_PYTHON`。缺少依赖时说明缺项，不切换为整页截图 PPT。跨 AI 能力和分格式终审边界见 `dual-review.md`。
 
 本地 PDF 导出使用 Playwright 驱动 Edge 按打印版式生成每页 16:9 的静态 PDF；需要相应浏览器与运行时。离线模式可直接调用浏览器打印。PDF 不保留可编辑演示对象；这里也不是通用 PPTX 浏览器导入器。
 
