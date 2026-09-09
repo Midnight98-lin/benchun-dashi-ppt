@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {buildScene,layouts} from './render.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const g=JSON.parse(await fs.readFile(path.join(root,'assets/example.goal.json'),'utf8'));
+const scene=await buildScene(g,path.join(root,'assets'));
+assert.equal(scene.slides.length,12);
+assert.equal(Object.keys(layouts).length,12);
+assert(scene.slides.every(s=>s.elements.some(e=>e.role==='title')));
+async function rejects(mutator){const x=structuredClone(g);mutator(x);await assert.rejects(buildScene(x,path.join(root,'assets')));}
+await rejects(x=>x.slides[0].props.title='超长原文'.repeat(100));
+await rejects(x=>x.slides[0].props.unexpectedBody='不允许静默丢字');
+await rejects(x=>x.slides[0].props.image.packagingVerified=false);
+await rejects(x=>x.slides[9].props.items[0].image.kind='scene');
+await rejects(x=>x.slides[7].props.chart.values=[1,2]);
+await rejects(x=>x.slides[7].props.chart.values=[1,-2,3]);
+await rejects(x=>x.slides[0].props.image.path='does-not-exist.png');
+await rejects(x=>x.slides=[x.slides[4],x.slides[4],x.slides[4]]);
+console.log('PASS: 12 layouts + overflow, unknown-copy, SKU, evidence, data, missing-asset and repeated-layout guards.');

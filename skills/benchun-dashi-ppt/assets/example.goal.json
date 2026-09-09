@@ -1,0 +1,291 @@
+{
+  "title": "本纯魔法 · Dashi PPT 公开版式样张",
+  "brand": "本纯魔法  /  BENCHUNMOFA",
+  "footer": "品牌视觉模板样张 · 不规定业务内容 · 数据为演示值",
+  "slides": [
+    {
+      "layout": "benchun-hero",
+      "props": {
+        "title": "本纯魔法\n品牌视觉语言",
+        "subtitle": "自然有形，专业易读。",
+        "body": "以确定版为视觉起点\n让产品、图像与文字\n成为一个整体",
+        "image": {
+          "path": "confirmed-family.png",
+          "kind": "product-scene",
+          "source": "20260828确定版P1内嵌场景",
+          "sku": "双产品100g与30g家族",
+          "sourceAssets": [
+            "确定版P1/ppt/media/image1.png"
+          ],
+          "packagingVerified": true
+        }
+      }
+    },
+    {
+      "layout": "benchun-editorial",
+      "props": {
+        "title": "图文分栏 · 一个完整的画面",
+        "subtitle": "文字有清晰的阅读起点，图像解释内容。",
+        "image": {
+          "path": "confirmed-botanical.png",
+          "kind": "scene",
+          "source": "20260828确定版P14/ppt/media/image9.png"
+        },
+        "items": [
+          {
+            "title": "一处主要视觉",
+            "body": "场景与页面主题相关，用真实的材质、光线和空间建立联系。"
+          },
+          {
+            "title": "明确的阅读层级",
+            "body": "标题、说明、正文各司其职，字号和间距形成自然的节奏。"
+          },
+          {
+            "title": "给内容留下空间",
+            "body": "保留原文，内容多时换版式或分页，不用缩小字号换取留白。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-chapter",
+      "props": {
+        "title": "产品在场景中\n自然地被看见",
+        "subtitle": "章节开篇 / 产品展示",
+        "body": "基于真实包装与自然环境\n建立有接触面、有光线的产品画面",
+        "image": {
+          "path": "confirmed-truffle-scene.png",
+          "kind": "product-scene",
+          "source": "20260828确定版P4内嵌场景",
+          "sku": "黑松露100g管体与外盒",
+          "sourceAssets": [
+            "确定版P4/ppt/media/image5.png"
+          ],
+          "packagingVerified": true
+        }
+      }
+    },
+    {
+      "layout": "benchun-statement",
+      "props": {
+        "title": "重点陈述 · 让主次一眼可见",
+        "dark": true,
+        "statement": "统一的是设计语言，\n不是每次的内容。",
+        "body": "字体、色彩与图像气质保持一致。\n页面结构和表现方式，始终服务于这一次的材料。"
+      }
+    },
+    {
+      "layout": "benchun-rows",
+      "props": {
+        "title": "连续条目 · 不把每段文字关进框",
+        "subtitle": "共同基线与轻分隔，比重复卡片更有秩序。",
+        "items": [
+          {
+            "title": "标题保持原样",
+            "body": "原来的标题和说明保留层级，不擅自把专业名词升为主标题。"
+          },
+          {
+            "title": "原文完整承载",
+            "body": "保留限定词、数字、单位和脚注。\n长内容允许通过合理分页变得易读。"
+          },
+          {
+            "title": "版式形成连贯",
+            "body": "编号、标题和正文形成连续阅读线，辅助线与文字保持安全间距。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-mechanism",
+      "props": {
+        "title": "机制图解 · 让关系变得看得懂",
+        "subtitle": "用图形承接结构，不用示意图替代事实。",
+        "center": {
+          "title": "原文核心概念",
+          "body": "中心锚点\n不是新的产品结论"
+        },
+        "items": [
+          {
+            "title": "作用是什么",
+            "body": "保留原文的通俗说明\n先让读者理解意义"
+          },
+          {
+            "title": "与什么有关",
+            "body": "对应原有成分或结构\n术语作为第二层信息"
+          },
+          {
+            "title": "如何发生",
+            "body": "连接线说明关系\n不擅自补造化学反应"
+          },
+          {
+            "title": "依据在哪里",
+            "body": "来源与说明可追溯\n证据与示意分开表达"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-flow",
+      "props": {
+        "title": "连贯流程 · 步骤沿一条主线展开",
+        "subtitle": "以下仅演示制作流程，不作为产品使用方法。",
+        "items": [
+          {
+            "title": "读取原稿",
+            "body": "确认源文件\n标记正文层级"
+          },
+          {
+            "title": "选择版式",
+            "body": "匹配内容关系\n保留全部原文"
+          },
+          {
+            "title": "安排素材",
+            "body": "核对真实资产\n融合场景与图像"
+          },
+          {
+            "title": "检查交付",
+            "body": "逐页看图\n核对文字和页码"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-data",
+      "props": {
+        "title": "数据重点 · 数字和含义一起被看见",
+        "subtitle": "单一数据焦点 + 同源可编辑图表",
+        "metric": {
+          "value": "+32%",
+          "label": "演示指标变化",
+          "body": "主数字、标签与单位相互绑定。\n说明在次层，研究条件不丢失。"
+        },
+        "chart": {
+          "categories": [
+            "样例A",
+            "样例B",
+            "样例C"
+          ],
+          "values": [
+            50,
+            58,
+            66
+          ],
+          "seriesName": "模板模拟数据",
+          "unit": "示例单位"
+        },
+        "source": "模板演示值：50 → 66，相对变化32%。不代表任何本纯产品实验或功效。"
+      }
+    },
+    {
+      "layout": "benchun-compare",
+      "props": {
+        "title": "对比表 · 清晰而不压迫",
+        "subtitle": "保留完整比较维度，用一处强调引导视线。",
+        "headers": [
+          "设计维度",
+          "一般使用",
+          "本纯视觉原则"
+        ],
+        "rows": [
+          [
+            "底色",
+            "按主题决定",
+            "暖白、森林绿、少量金"
+          ],
+          [
+            "文字",
+            "层级清晰",
+            "原文锁定，大小有序"
+          ],
+          [
+            "图片",
+            "解释页面内容",
+            "产品保真二次渲染"
+          ],
+          [
+            "检查",
+            "核对输出",
+            "内容 + 包装 + 逐页视觉"
+          ]
+        ],
+        "highlightColumn": 2
+      }
+    },
+    {
+      "layout": "benchun-evidence",
+      "props": {
+        "title": "证据画廊 · 真实材料的位置",
+        "subtitle": "公开样张使用醒目标记的占位图，不含真实专利、检测或产品背书。",
+        "items": [
+          {
+            "title": "证据材料 A · 占位",
+            "body": "请替换为已授权的真实证据文件",
+            "image": {
+              "path": "evidence-placeholder-a.png",
+              "kind": "evidence",
+              "source": "公开演示占位图：不是证书、报告或产品证据"
+            }
+          },
+          {
+            "title": "证据材料 B · 占位",
+            "body": "保留原始编号与来源，不生成证据",
+            "image": {
+              "path": "evidence-placeholder-b.png",
+              "kind": "evidence",
+              "source": "公开演示占位图：不是证书、报告或产品证据"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-montage",
+      "props": {
+        "title": "主次拼贴 · 图像之间有空间关系",
+        "subtitle": "大图建立氛围，小图补充产品与细节。",
+        "images": [
+          {
+            "path": "confirmed-botanical.png",
+            "kind": "scene",
+            "source": "20260828确定版P14内嵌场景"
+          },
+          {
+            "path": "confirmed-truffle-scene.png",
+            "kind": "product-scene",
+            "source": "20260828确定版P4内嵌场景",
+            "sku": "黑松露100g管体与外盒",
+            "sourceAssets": [
+              "确定版P4/ppt/media/image5.png"
+            ],
+            "packagingVerified": true
+          }
+        ]
+      }
+    },
+    {
+      "layout": "benchun-references",
+      "props": {
+        "title": "安静附录 · 给来源一个清楚的位置",
+        "subtitle": "以下为视觉模板的来源说明，不是通用业务文献。",
+        "items": [
+          {
+            "title": "确认版产品手册",
+            "body": "2026-08-28确定版，38页。\n只作为设计与构图参考，不固定未来产品内容。"
+          },
+          {
+            "title": "正式品牌视觉规范",
+            "body": "2026-08-31归档规范。\n暖象牙白、森林绿与克制香槟金。"
+          },
+          {
+            "title": "真实设计资产",
+            "body": "公开版保留已获同意的品牌场景图。\n真实包装源文件与证据需自行提供。"
+          },
+          {
+            "title": "独立品牌模板",
+            "body": "采用layout + props编排方式。\n可编辑PPTX导出使用平台原生工具。"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "本纯魔法 · Dashi PPT"
+  short_description: "本纯品牌 HTML 演示：浏览器编辑保存，导出原生 PPTX 与静态 PDF，保留原文与包装保真"
+  default_prompt: "使用 $benchun-dashi-ppt，沿用本纯确认版视觉与所给原文，制作可在浏览器编辑保存的 HTML 演示，并按需从已保存稿导出 PPTX / PDF，完成包装保真与逐页终审。"
+policy:
+  allow_implicit_invocation: true

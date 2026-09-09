@@ -1,0 +1,20 @@
+{
+  "edition": "public",
+  "version": "1.0.0",
+  "confirmedAt": "2026-09-09",
+  "purpose": "公开视觉来源索引，不提供私有项目路径或真实证据文件",
+  "visualNorm": "references/brand-system.md",
+  "packagingNorm": "references/asset-workflow.md",
+  "referenceImages": {
+    "confirmed-family.png": "经用户同意公开的确定版家族场景",
+    "confirmed-truffle-scene.png": "经用户同意公开的确定版产品场景",
+    "confirmed-botanical.png": "经用户同意公开的确定版自然场景",
+    "reference-contact.jpg": "本公开样张生成的版式缩略图",
+    "evidence-placeholder-a.png": "非真实证据，仅为版式占位",
+    "evidence-placeholder-b.png": "非真实证据，仅为版式占位"
+  },
+  "privateAssets": "原包装、Logo源文件、真实专利及报告不随公开版提供；使用者自行提供有权使用的文件。",
+  "dashi": {
+    "relationship": "独立品牌实现，沿用layout + props编排思想；不包含Dashi专有编辑器/API/导出引擎"
+  }
+}
