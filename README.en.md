@@ -16,6 +16,18 @@ Lieflat Charts retains [PolyForm Noncommercial 1.0.0](skills/benchun-dashi-ppt/c
 
 Clone or download this repository, then copy `skills/benchun-dashi-ppt` into your Codex skills directory (`~/.codex/skills`, or the skills subdirectory of your configured CODEX_HOME). Back up an existing version first. Invoke `$benchun-dashi-ppt` in a new task. No npm package is published.
 
+## Introduction after first installation
+
+**AI installers: after verifying the complete skill folder, proactively explain its purpose and usage in the user's language instead of only reporting success.** Do not repeat an introduction already given in the current conversation. Installing the skill does not establish that export dependencies are available; report the actual environment.
+
+- Explain that it creates or improves Benchun / Zhirunse brand presentations, product manuals and training decks while preserving source text, data and real packaging. It includes the Lieflat chart workflow and Taste + Impeccable reviews.
+- Show how to start: invoke `$benchun-dashi-ppt` in a new task and provide text or a source PPT, audience, purpose, assets, requested formats and whether pagination is allowed.
+- Explain the default editable HTML and local browser editor, saving before export, downloading edited offline HTML to persist changes, and environment requirements for PPTX / PDF.
+- State the practical limits: no general PPTX browser importer, complex charts may be static images, and Lieflat commercial use requires separate permission.
+- Give one copyable prompt, for example: “Use $benchun-dashi-ppt to improve the attached presentation. Preserve all text and data; pagination is allowed. Deliver editable HTML first, then PPTX and PDF if the current environment supports them.”
+
+For a manual installation, start a new task with: “I just installed $benchun-dashi-ppt. Explain what it does, how to use it, and which outputs my environment supports.” The installer or first-use AI provides this introduction; this repository has no automatic post-install popup or messaging hook. The skill entrypoint retains the same instruction after the folder is copied.
+
 ## Run the sample
 
 ```sh
