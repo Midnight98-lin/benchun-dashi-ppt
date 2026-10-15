@@ -1,5 +1,7 @@
 # Third-party notices
 
+- **Lieflat Charts**, by 躺在废墟里, is bundled as an unmodified installed snapshot under [PolyForm Noncommercial 1.0.0](skills/benchun-dashi-ppt/chart-skills/lieflat-charts/LICENSE). Commercial use requires separate permission from its licensor. Its [third-party notices](skills/benchun-dashi-ppt/chart-skills/lieflat-charts/THIRD_PARTY_NOTICES.md) retain independent terms for Chart.js, ECharts and Inter. [Source and per-file snapshot](skills/benchun-dashi-ppt/chart-skills/SOURCES.md) record provenance. Benchun does not grant commercial permission for those files.
+
 - **design-taste-frontend / Taste Skill**, copyright (c) 2026 Leonxlnx, is bundled under MIT. See [its full license](skills/benchun-dashi-ppt/review-skills/design-taste-frontend/LICENSE).
 - **Impeccable 4.1.2**, from pbakaus/impeccable, is bundled under Apache-2.0. See [LICENSE](skills/benchun-dashi-ppt/review-skills/impeccable/LICENSE) and [upstream NOTICE](skills/benchun-dashi-ppt/review-skills/impeccable/NOTICE.md). Additional MIT license texts for its platform-design guidance and modern-screenshot bundle are retained beside them.
 - Original review-skill files are unmodified. Benchun's PPT adapter is separate and is not upstream-endorsed. [Sources and entrypoint hashes](skills/benchun-dashi-ppt/review-skills/SOURCES.md) identify the bundled snapshots. These licenses apply to those third-party files independently of the licensing status of Benchun's own code and artwork.
